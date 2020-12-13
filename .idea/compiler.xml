@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="proxy-pattern" />
+        <module name="decorator-pattern" />
+        <module name="state-pattern" />
+        <module name="delegate-pattern" />
+        <module name="template-pattern" />
+        <module name="observer-pattern" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="decorator-pattern" target="1.5" />
+      <module name="delegate-pattern" target="1.5" />
+      <module name="observer-pattern" target="1.5" />
+      <module name="proxy-pattern" target="6" />
+      <module name="state-pattern" target="1.8" />
+      <module name="template-pattern" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="state-pattern" options="-parameters" />
+    </option>
+  </component>
+</project>
