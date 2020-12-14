@@ -93,7 +93,6 @@ T2是类型T1的子类型。定义看上去还是比较抽象，我们重新理�
 </table>
 
 
-<br/>
 <H1>GOF23种设计模式：</H1>
 1、工厂方法模式(Factory Method Pattern)<br/>
 2、抽象工厂模式(Abstract Factory Pattern)<br/>
@@ -123,5 +122,256 @@ T2是类型T1的子类型。定义看上去还是比较抽象，我们重新理�
 <br/>
 简单工厂模式 (Simple Factory Pattern)<br/>
 委派模式(Delegate Pattern)
+
+<H1>一句话归纳设计模式</H1>
+<table>
+    <tr>
+        <td>设计模式</td>
+        <td>一句话归纳</td>
+        <td>目的</td>
+        <td>生活案例</td>
+        <td>框架源码举例</td>
+    </tr>
+    <tr>
+        <td>工厂模式(Factory)</td>
+        <td>生产标准化，生产更高效</td>
+        <td>封装创建细节</td>
+        <td>实体工厂</td>
+        <td>LoggerFactory、Calender</td>
+    </tr>
+    <tr>
+        <td>单例模式(Singleton)</td>
+        <td>世上只有一个我</td>
+        <td>保证独一无二</td>
+        <td>CEO</td>
+        <td>BeanFactory、Runtime</td>
+    </tr>
+    <tr>
+        <td>原形模式(Prototype)</td>
+        <td>拔一根猴毛，吹出千万个</td>
+        <td>高效创建对象</td>
+        <td>克隆</td>
+        <td>ArrayList、PrototypeBean</td>
+    </tr>
+    <tr>
+        <td>建造者模式(Builder)</td>
+        <td>高配中配与低配，想选哪配就哪配</td>
+        <td>开放个性配置步骤</td>
+        <td>选配</td>
+        <td>StringBuilder、BeanDefinitionBuilder</td>
+    </tr>
+    <tr>
+        <td>代理模式(Proxy)</td>
+        <td>没资源没时间，得找媒婆帮忙</td>
+        <td>增强职责</td>
+        <td>媒婆</td>
+        <td>ProxyFactoryBean、JdkDynamicAopProxy、CglibAopProxy</td>
+    </tr>
+    <tr>
+        <td>门面模式(Facade)</td>
+        <td>打开一扇门，走向全世界</td>
+        <td>统一访问入口</td>
+        <td>前台</td>
+        <td>JdbcUtil、RequestFacade</td>
+    </tr>
+    <tr>
+        <td>装饰器模式(Decorator)</td>
+        <td>他大舅他二舅都是他舅</td>
+        <td>灵活扩展、同宗同源</td>
+        <td>煎饼</td>
+        <td>BufferedReader、InputStream</td>
+    </tr>
+    <tr>
+        <td>享元模式(FlyWeight)</td>
+        <td>优化资源配置，减少重复浪费</td>
+        <td>共享资源池</td>
+        <td>全国社保联网</td>
+        <td>String、Integer、ObjectPool</td>
+    </tr>
+    <tr>
+        <td>组合模式(Composite)</td>
+        <td>人在一起叫团伙，心在一起叫团队</td>
+        <td>统一整体和个体</td>
+        <td>组织架构树</td>
+        <td>HashMap、SqlNote</td>
+    </tr>
+    <tr>
+        <td>适配器模式(Adapter)</td>
+        <td>适合自己的，才是最好的</td>
+        <td>兼容转换</td>
+        <td>电源适配</td>
+        <td>AdvisorAdapter、HandlerAdapter</td>
+    </tr>
+    <tr>
+        <td>桥接模式(Bridge)</td>
+        <td>约定优于配置</td>
+        <td>不允许用继承</td>
+        <td>桥</td>
+        <td>DriverManager</td>
+    </tr>
+    <tr>
+        <td>委派模式(Delegate)   不属于23种GOF</td>
+        <td>这个需求很简单，怎么实现我不管</td>
+        <td>只对结果负责</td>
+        <td>授权委托书</td>
+        <td>ClassLoader、BeanDefinitionParseDelegate</td>
+    </tr>
+    <tr>
+        <td>模板模式(Template)</td>
+        <td>流程全部标准化，需要微调请覆盖</td>
+        <td>逻辑复用</td>
+        <td>把大象装进冰箱的步骤</td>
+        <td>JdbcTemplate、HttpServlet</td>
+    </tr>
+    <tr>
+        <td>策略模式(Strategy)</td>
+        <td>我出方案，你来选</td>
+        <td>把选择权交给用户</td>
+        <td>选择支付方式</td>
+        <td>Comparator、InstantiationStrategy</td>
+    </tr>
+    <tr>
+        <td>责任链模式(Chain of Responsibility)</td>
+        <td>事不关己高高挂起</td>
+        <td>解耦处理逻辑</td>
+        <td>踢皮球</td>
+        <td>FilterChain、Pipeline</td>
+    </tr>
+    <tr>
+        <td>迭代器模式(Iterator)</td>
+        <td>一年365，过完一天少一天</td>
+        <td>统一集合的访问方式</td>
+        <td>统一刷脸进站</td>
+        <td>Iterator</td>
+    </tr>
+    <tr>
+        <td>命令模式(Command)</td>
+        <td>运筹帷幄之中，决胜千里之外</td>
+        <td>解耦请求和处理</td>
+        <td>遥控器</td>
+        <td>Runnable、TestCase</td>
+    </tr>
+    <tr>
+        <td>状态模式(State)</td>
+        <td>状态驱动行为，行动觉得状态</td>
+        <td>绑定状态和行为</td>
+        <td>订单状态跟踪</td>
+        <td>Lifecycle</td>
+    </tr>
+    <tr>
+        <td>备忘录模式(Memento)</td>
+        <td>给我一剂“后悔药”</td>
+        <td>备份</td>
+        <td>草稿箱</td>
+        <td>StateManageableMessageContext</td>
+    </tr>
+    <tr>
+        <td>中介者模式(Mediator)</td>
+        <td>联系方式我给你，怎么搞定我不管</td>
+        <td>统一管理网状资源</td>
+        <td>朋友圈</td>
+        <td>Timer</td>
+    </tr>
+    <tr>
+        <td>解释器模式(Interpreter)</td>
+        <td>我想说“方言”</td>
+        <td>实现特定语法解析</td>
+        <td>摩斯密码</td>
+        <td>Pattern、ExpressionParse</td>
+    </tr>
+    <tr>
+        <td>观察者模式(Observer)</td>
+        <td>到点就通知我</td>
+        <td>解耦观察者与被观察者</td>
+        <td>闹钟</td>
+        <td>ContextLoaderListener</td>
+    </tr>
+    <tr>
+        <td>访问者模式(Visitor)</td>
+        <td>横看成岭侧成峰，远近高低各不同</td>
+        <td>解耦数据结构和数据操作</td>
+        <td>KPI考核</td>
+        <td>FileVisitor、BeanDefinitionVisitor</td>
+    </tr>
+</table>
+
+
+<H1>模式PK</H1>
+<H2>代理模式VS中介者模式</H2>
+代理：职责增强，不仅要建立联系，还要参与过程<br/>
+中介：只负责牵线搭桥，建立联系
+
+<H2>委派模式VS代理模式</H2>
+委派：全权近代代理模式，不做任何的增强<br/>
+代理：一定会有增强<br/>
+没有任何增强的就叫委派
+
+<H2>命令模式VS策略模式</H2>
+命令：解耦请求和处理，会有一个回调，会有反馈及处理结果，本来请求和处理是可以写一块的<br/>
+策略：固定好的选项，结果一定是同样的结果，一定要用户有参与<br/>
+都有有个清单，给你啥就是啥，
+
+<H2>代理模式VS装饰器模式</H2>
+代理：组合实现功能增强和扩展<br/>
+装饰：继承实现增强和扩展
+
+<H2>委派模式VS责任链</H2>
+委派：没有流程的概念，只需要拿到结果<br/>
+责任：处理流程，处理流程可扩展，可定制，最终结果由责任链中的某些Handler决定的
+
+
+<H2>工厂方法VS抽象工厂</H2>
+工厂方法：产品扩展，单向维度<br/>
+抽象工厂：产品等级结构和产品族的相互扩展，对维度
+
+<H2>桥接模式VS适配器模式</H2>
+桥接模式：不用继承建立联系<br/>
+适配器模式：类适配器用的继承、对象适配器用的组合、接口适配器实际上也是继承
+
+
+<H2>行为型VS结构型VS创建型</H2>
+行为：对Java中的方法的使用提出的建议<br/>
+结构：对Java类的组合提出建议<br/>
+创建：对创建Java对象的形式提出的建议
+
+<H2>建造者模式VS装饰器模式</H2>
+建造者：强调对象创建步骤的个性化，一般来说会有标配<br/>
+装饰器：强调扩展性，大桶套小桶
+
+<H2>适配器模式VS中介者模式</H2>
+适配器：解决兼容问题，可以用继承，也可以用组合<br/>
+中介者：一定是用组合，所有人可能都持有中介者的引用
+
+<H2>桥接模式VS中介者模式</H2>
+共同点：不用继承：一定是组合<br/>
+桥接：是两个维度建立连接<br/>
+中介者：多维度建立连接（是一个更复杂的桥接模式的实现）
+
+<H2>桥接模式VS组合模式</H2>
+桥接：两个继承体系建立连接，反而就是为了满足个性<br/>
+组合：目的不是为了建立连接，而是为了统一行为，统一一套API
+
+
+<H2>门面模式VS装饰器模式</H2>
+门面：统一路口，背后有很多子系统，承担一定的静态代理作用<br/>
+装饰：为了扩展，背后一定是同宗同源
+
+<H2>工厂模式VS策略模式</H2>
+一般来说，他们俩会组合使用，策略将由工厂来创建<br/>
+
+
+<H2>桥接模式VS命令模式</H2>
+桥接：需要一个中间了类，一定是有功能实现的<br/>
+命令：需要一个抽象的中间类，只是为了规范
+
+<H2>委派模式VS门面模式</H2>
+在门面里面，可能会用到委派模式实现任务分发<br/>
+
+<H2>策略模式VS模板模式</H2>
+有时候会混用，模板模式中可能设计的钩子方法就是每一个策略的实现<br/>
+
+
+
+
 
 
